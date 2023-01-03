@@ -12,6 +12,6 @@ RESULT=$(curl -s 'http://192.168.100.1/MtaEventLogRetail.htm' \
 -H 'Connection: keep-alive' \
 -H 'Cookie: XSRF_TOKEN=15871899' \
 -H 'Upgrade-Insecure-Requests: 1' \
-| grep -Po "TableTagValueList....\K.+?(?=';)")
+| grep -Po " TableTagValueList....\K.+?(?=';)")
 
 printf "$(echo "$RESULT" |grep -Po ">\KREGISTER.+?(?=\|)")"| sed -e $'s/<br>/\\\n/g'
