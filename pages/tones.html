@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Telephony Tones</title>
+</head>
+
+<body>
+  <h1>Telephony Tones</h1>
+  <p>Select a tone:</p>
+  <select id="toneSelect">
+    <option value="off">Off</option>
+    <option value="dial">Dial Tone</option>
+    <option value="busy">Busy Tone</option>
+    <option value="reorder">Reorder Tone</option>
+    <option value="high">High Tone</option>
+  </select>
+  <script>
+    const toneSelect = document.getElementById("toneSelect");
+
+    // Initialize the audio context and oscillator nodes when the dropdown menu is first interacted with
+    let audioCtx, dialOscillator, dialOscillator2, busyOscillator, busyOscillator2, highOscillator, dialGain, busyGain, highGain;
+    initialize = function(e) {
+      // Create an audio context
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+      // Create oscillator nodes for each telephony tone
+      dialOscillator = audioCtx.createOscillator();
+      dialOscillator.frequency.value = 350;  // Dial tone frequency
+      dialOscillator.type = "sine";
+      dialOscillator.start();  // Start the oscillator
+
+      dialOscillator2 = audioCtx.createOscillator();
+      dialOscillator2.frequency.value = 440;  // Dial tone frequency
+      dialOscillator2.type = "sine";
+      dialOscillator2.start();  // Start the oscillator
+
+      busyOscillator = audioCtx.createOscillator();
+      busyOscillator.frequency.value = 480;  // Busy tone frequency
+      busyOscillator.type = "sine";
+      busyOscillator.start();  // Start the oscillator
+
+      busyOscillator2 = audioCtx.createOscillator();
+      busyOscillator2.frequency.value = 620;  // Busy tone frequency
+      busyOscillator2.type = "sine";
+      busyOscillator2.start();  // Start the oscillator
+
+      highOscillator = audioCtx.createOscillator();
+      highOscillator.frequency.value = 480;  // High tone frequency
+      highOscillator.type = "sine";
+      highOscillator.start();  // Start the oscillator
+
+      // Create gain nodes to control the volume of each telephony tone
+      dialGain = audioCtx.createGain();
+      dialGain.gain.value = 0;  // Dial tone volume
+
+      busyGain = audioCtx.createGain();
+      busyGain.gain.value = 0;  // Busy tone volume
+
+      highGain = audioCtx.createGain();
+      highGain.gain.value = 0;  // High tone volume
+
+      // Connect the oscillators and gain nodes to the audio context destination
+      dialOscillator.connect(dialGain);
+      dialOscillator2.connect(dialGain);
+      dialGain.connect(audioCtx.destination);
+
+      busyOscillator.connect(busyGain);
+      busyOscillator2.connect(busyGain);
+      busyGain.connect(audioCtx.destination);
+
+      highOscillator.connect(highGain);
+      highGain.connect(audioCtx.destination);
+
+      // Remove the event listener so that the audio context is only initialized once. We CANNOT use argument.callee here because it is not supported in strict mode.
+      e.target.removeEventListener(e.type, initialize);
+    }
+
+    // Add an event listener to initialize the audio context when the dropdown menu is first interacted with
+    toneSelect.addEventListener("mousedown", initialize);
+
+    // Set up an interval to switch between the busy and reorder tones
+    let interval;
+    const reorder = () => {
+      busyGain.gain.value = 0;
+      interval = setTimeout(() => {
+        busyGain.gain.value = 0.5;
+        interval = setTimeout(reorder, 250);
+      }, 250);
+    }
+
+    // Set up an interval to switch between the busy on and off states
+    const busy = () => {
+      busyGain.gain.value = 0;
+      interval = setTimeout(() => {
+        busyGain.gain.value = 0.5;
+        interval = setTimeout(busy, 500);
+      }, 500);
+    }
+
+    // Update the telephony tone when the dropdown value changes
+    toneSelect.addEventListener("change", () => {
+      // Stop the interval and set all gain values to 0
+      clearInterval(interval);
+      dialGain.gain.value = 0;
+      busyGain.gain.value = 0;
+      highGain.gain.value = 0;
+
+      // Set the gain value for the selected tone
+      switch (toneSelect.value) {
+        case "dial":
+          dialGain.gain.value = 0.5;
+          break;
+        case "busy":
+          busyGain.gain.value = 0.5;
+          busy();
+          break;
+        case "reorder":
+          busyGain.gain.value = 0.5;
+          reorder();
+          break;
+        case "high":
+          highGain.gain.value = 0.5;
+          break;
+      }
+    });
+  </script>
+</body>
+
+</html>
