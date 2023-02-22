@@ -1,15 +1,12 @@
 15M          Fifteen minutes
 15S          Fifteen seconds
-1CF          Singal party coing first pay phone
+1CF          Single party coin first pay phone
 1FAC         Interface packs
 1FB          One party flat business rate
 1OF          One party official (telco) business line
-2SPDT        Partial dial timeout in the second stage of a traditional
-              2-stage international
-2SPST        Permanent signal timeout in the second stage of a traditional
-              2-stage international
-2SVCA        Vacant code in the second stage of a traditional 2-stage
-              international outbound
+2SPDT        Partial dial timeout in the second stage of a traditional 2-stage international
+2SPST        Permanent signal timeout in the second stage of a traditional 2-stage international
+2SVCA        Vacant code in the second stage of a traditional 2-stage international outbound
 2W           Two wire (pair) (circuit)
 2WAY         Two-way trunk groups
 300          Log command menu (SARTS command)
@@ -29,8 +26,7 @@
 735T         735-ohm compromise termination
 ?A           Action field contains an error
 ?D           Data field contains an error
-?E           Error exist in the message but can ot be resolved to the
-              proper field
+?E           Error exist in the message but can ot be resolved to the proper field
 ?I           Identification field contains an error
 ?T           Time-out has occured on channel
 ?W           Warning message
@@ -299,16 +295,12 @@ ASM          Analog subscriber module
 ASOC         Administrative service oversight center
 ASP          Advanced service platform
 ASP          Arcofi signal processor
-ASPACGCOMP   ASP SCP response message with an ACG component received at the
-              switch
+ASPACGCOMP   ASP SCP response message with an ACG component received at the switch
 ASPBADRESP   ASP SCP response message received with invalid data
 ASPEN        Automatic system for performance evaluation of the network
-ASPNORTEMSG  ASP reject message ret err and a play announc recei at the
-              switch from the SCP
-ASPSNCOMP    ASP SCP response message with a send notifi component received
-               at the switch
-ASPTNMSG     ASP termination notification message sent from the switch to
-               the SCP
+ASPNORTEMSG  ASP reject message ret err and a play announc received at the switch from the SCP
+ASPSNCOMP    ASP SCP response message with a send notifi component received at the switch
+ASPTNMSG     ASP termination notification message sent from the switch to the SCP
 ASR          Access service request
 ASSN         Assignment
 AST          Position acknowledge seizure signal time-out (MDII)
@@ -431,8 +423,7 @@ BL           Bridge lifters - COSMOS command
 BL/DS        Busy line/don't answer
 BLA          Blocking acknowledgement (SS7: in ISUP)
 BLF          Busy line field
-BLFCA        Blocking a fully coded addressed international outbound call
-              routed to a non-common channel signaling trunk
+BLFCA        Blocking a fully coded addressed international outbound call routed to a non-common channel signaling trunk
 BLK          Block
 BLKD         Blocked
 BLO          Blocking (SS7: in ISUP)
@@ -630,8 +621,7 @@ CCC          Central control complex
 CCC          Clear channel capability
 CCC          Computer control center
 CCD          Change due date - COSMOS command
-CCDDBOV      BVA calling card (CCRD) message received indicating data base
-               overload
+CCDDBOV      BVA calling card (CCRD) message received indicating data base overload
 CCDDBUN      BVA CCRD message returned because data base unable to process
 CCDGMSG      BVA CCRD message received garbled
 CCDNBLK      BVA CCRD message returned because of network blockage
@@ -734,8 +724,7 @@ CFN          Call forward number
 CFND         Call forward number don't answer
 CFNR         Call forwarding no reply (i.252 c)
 CFP          Call forwarding busy (i.252 b)
-CFP          Print the class of service/features for an electromechanical
-               enti
+CFP          Print the class of service/features for an electromechanical enti
 CFR          Code of federal regulations
 CFT          Craft
 CFU          Call forwarding unconditional (i.252 d)
@@ -778,8 +767,7 @@ CIH          Craft interface handler
 CII          Call identity index
 CII          Initial address message (IAM) irregularity (incoming)
 CIMAP        Circuit installation and maintance assistance program
-CIMAP/CC     Circuit installation and maintenance assistance/control
-              center
+CIMAP/CC     Circuit installation and maintenance assistance/control center
 CIP          Control interface port
 CIRR         C/I receive register
 CIS          Crimeline information systems
@@ -865,11 +853,9 @@ CN           Changel noticee
 CN           Connection
 CN           SSN network trunk INTER/TRA blocal 1-26
 CN/A         Customer name/address
-CN02         List of pay phones with coin disposal problems - 1AESS coin
-              phone
+CN02         List of pay phones with coin disposal problems - 1AESS coin phone
 CN03         Possible trouble - 1AESS coin phone
-CN04         Phone taken out of restored service because of possible coin
-              fraud
+CN04         Phone taken out of restored service because of possible coin fraud
 CNA          Communications network application
 CNAB         Customer name/address bureau
 CNCC         Customer network control center
@@ -913,8 +899,7 @@ COM          Computer output microfilm
 COM/EXP      PCM-compander/expander
 COMM         Comunication
 COMMS        Central office maintenance management system
-COMMS-PM     Central office maintenance management system-preventive
-              Maintenance
+COMMS-PM     Central office maintenance management system-preventive maintenance
 COMP         Computed
 COMPNY       Company
 COMPS        Central Office Managenment Program (GTE)
@@ -1036,10 +1021,8 @@ CSUS         Centralized automatic message accounting suspension (NTI)
 CT           Call transfer (i.252 a)
 CT           Control terminal
 CT           SSN tie trunk INTER/TRA blocal 1-26
-CT01         Manually requested trace line to line information
-              follows - 1AESS
-CT02         Manually requested trace line to trunk information
-              follows - 1AESS
+CT01         Manually requested trace line to line information follows - 1AESS
+CT02         Manually requested trace line to trunk information follows - 1AESS
 CT03         Intraoffice call placed to a number with CLID - 1AESS call trace
 CT04         Interoffice call placed to a number with CLID - 1AESS call trace
 CT05         Call placed to number on the ci list - 1AESS call trace
@@ -1397,8 +1380,7 @@ DS           Digital signal
 DS           Direct signal
 DS-0         Digital signal 0 (one channel at 64 kb/s)
 DS-0A        Digital signal at a subrate level on DS-0 for one customer
-DS-0B        Digital signals at a subrate level on DS-0 facility for one
-              or more CU
+DS-0B        Digital signals at a subrate level on DS-0 facility for one or more CU
 DS-1         Digital signal level one
 DS0          Digital signal zer0
 DSBAM        Double-sideband amplitude module
@@ -2116,8 +2098,7 @@ INW          INWATS [code 258(8000-8299)]
 INWATS       Inward wide area telecommunications system
 INWATS       Inward wide area telephone service
 INWBLKD      INWATS returned blocked
-INWBLKD      Inward wide area telecommunications service (INWATS) returned
-              blocked
+INWBLKD      Inward wide area telecommunications service (INWATS) returned blocked
 INWBUSY      INWATS all lines busy
 INWCCBL      INWATS code control blocked
 INWDBOV      INWATS data base overload
@@ -2418,8 +2399,7 @@ LBL          Online tape label printing
 LBNCGI       LIDB BNS message with call gapping indicator present
 LBNGM        LIDB BNS garbled message
 LBNMGM       LIDB BNS return value missing group or misrouted
-LBNNAN       LIDB BNS return value no translation for an address of such
-              nature
+LBNNAN       LIDB BNS return value no translation for an address of such nature
 LBNNCG       LIDB BNS return value network congestion
 LBNNFL       LIDB BNS return value network failure
 LBNNPG       LIDB BNS return value nonparticipating group
@@ -2446,8 +2426,7 @@ LC           Line count
 LC           Output line count
 LC           Pending service order count
 LC           Voice-switched line-service code for LATA access
-LCAMOS       Loop cable administration and maintenance operations system
-              (predictor)
+LCAMOS       Loop cable administration and maintenance operations system (predictor)
 LCC          Line class code
 LCCIS        Local common channel interoffice signaling
 LCCL         Line card cable
@@ -2558,8 +2537,7 @@ LIN          Transmit alit data to COSMOS
 LINCS        Lan integrated network communications system
 LINIS        Line and number inventory system
 LINK         Loop interface network
-LINK1        The basic rate interface transmission extension (BRITE)
-              link one is down
+LINK1        The basic rate interface transmission extension (BRITE) link one is down
 LINK2        The BRITE link two is down.
 LINK3        The BRITE link three is down.
 LINK4        The BRITE link four is down.
@@ -2573,8 +2551,7 @@ LIU          Lats interface unit
 LIU          Line interface unit
 LIU          Line user interface
 LJ           Voice and data ssn access-service code for LATA access
-LK           Voice and data-ssn-intermachine trunk-service code for LATA
-              access
+LK           Voice and data-ssn-intermachine trunk-service code for LATA access
 LKNODE       Link node
 LL           Logical link
 LL           Long distance terminal line INTER/TRA blocal 1-26
@@ -2775,9 +2752,8 @@ MA03         Hourly report of system circuits and units in trouble
 MA04         Reports condition of system - 1AESS maintenance
 MA05         Maintenance interrupt count for last hour - 1AESS maintenance
 MA06         Scanners
-MA07         Successful switch of duplicated unit (program store etc.)
-              - 1AESS
-MA08         Excessive error rate of named unit -1AESS maintenance
+MA07         Successful switch of duplicated unit (program store etc.) - 1AESS
+MA08         Excessive error rate of named unit - 1AESS maintenance
 MA09         Power should not be removed from named unit - 1AESS maintenance
 MA10         Ok to remove paper - 1AESS maintenance
 MA11         Power manually removed from unit - 1AESS maintenance
@@ -3714,12 +3690,13 @@ ODP          Organization development program
 ODP          Organizational design program
 ODS          Overhead data stream
 ODS          Tnds on-line demand servicing
+OE           Originating equipment
 OE           Office equipment
 OE           Office equipment / office equipment number
-OE           Office equpiment number
+OE           Office equipment number
 OEC          Other exchange carrier
 OEC          Outside plant equivalence codes
-OEIC         Optoelectronic integrated circiut
+OEIC         Optoelectronic integrated circuit
 OEIS         OSPS external information system
 OEM          Original equipment manufacture
 OEM          Original equipment manufacturer
@@ -4231,7 +4208,7 @@ PW           Protective relaying-signal grade INTER/TRA blocal 1-26
 PWC          Premis wire center
 PX           Pbx station line INTER/TRA blocal 1-26
 PX           Power cross.
-PZ           Msc constructed circut INTER/TRA blocal 1-26
+PZ           Msc constructed circuit  INTER/TRA blocal 1-26
 Q            Report class.  see table 5-1.
 Q-CIF        Quarter cif (for ISDN low end video)
 QAM          Quadrature-amplitude modulation
@@ -4673,22 +4650,15 @@ SDN          Software-defined network
 SDNBAS       Call failed due to the query's being blocked at the switch
 SDNBN        Call failed due to the query's being blocked in the CCS network
 SDNGTCAP     Garbled TCAP message received
-SDNNCANI     CAMA call failed due to CAMA trunk's not providing ANI for
-               query
+SDNNCANI     CAMA call failed due to CAMA trunk's not providing ANI for query
 SDNNCFA      Call failed while the transaction with the NCP was active
 SDNNCFI      Call failed while the transaction with the NCP was inactive
-SDNNOCANI    CAMA call failed due to CAMA trunk's not providing ANI
-               through ONI for query
-SDNRER       Call failed because to the conversation with the NCP
-               resulted in a return error
-SDNRER       Call failed because to the conversation with the NCP
-               resulting in a return error
-SDNRR        Call failed because to the conversation with the NCP
-               resulted in a reject respon
-SDNRR        Call failed because to the conversation with the NCP
-               resulting in a reject respo
-SDNTIM       Call failed due to the query's not being answered in
-               time by the NCP
+SDNNOCANI    CAMA call failed due to CAMA trunk's not providing ANI through ONI for query
+SDNRER       Call failed because to the conversation with the NCP resulted in a return error
+SDNRER       Call failed because to the conversation with the NCP resulting in a return error
+SDNRR        Call failed because to the conversation with the NCP resulted in a reject respon
+SDNRR        Call failed because to the conversation with the NCP resulting in a reject respo
+SDNTIM       Call failed due to the query's not being answered in time by the NCP
 SDNTRF       Call failed due to the NCP's answering with a terminate request
 SDOC         Selective dynamic overload controls
 SDP          Service delivery point
@@ -4815,8 +4785,7 @@ SM           Switching module
 SM           Synchronous multiplexor
 SMAC         Service and maintance administration center
 SMAS         Switched maintance access system
-SMAS         Switched maintance access system (provides access to the
-              RMS-M and RTS)
+SMAS         Switched maintance access system (provides access to the RMS-M and RTS)
 SMASF        SMAS frame
 SMASPU       SMAS power unit
 SMD          Surface mounted device
@@ -4892,8 +4861,7 @@ SPC          Stored program controlled
 SPCR         Serial port control register
 SPCS         Stored program control system
 SPCS         Stored programacontrolnsystem
-SPCS COER    Stored-program control system/central office equipment
-              report
+SPCS COER    Stored-program control system/central office equipment report
 SPCSS        Stored program control switching system
 SPD          Speed
 SPDA         Supplier data program
@@ -5248,8 +5216,7 @@ TNS          Telephone number swap
 TO           Toll office
 TOC          Television operating center
 TOC          Transfer order completion
-TOC0         Reports status of less serious overload conditions -
-               1AESS traffic
+TOC0         Reports status of less serious overload conditions - 1AESS traffic
 TOC0         Serious traffic condition - 1AESS traffic overload
 TOE          Transfer order establishment
 TOF          Mass oe transfer order frame listings
@@ -5298,7 +5265,7 @@ TREAT        Trouble reporteandsanalysisstool
 TREQF        Transmission equipment failure.
 TRFC15       Fifteen minute traffic report
 TRG          Trouble reference guide
-TRI          Tone ringer          psb652x
+TRI          Tone ringer psb652x
 TRI          Transmission equipment assignment inquiry
 TRK          Analog or digital recorded announcement trunks
 TRK          Trunks
@@ -5308,7 +5275,6 @@ TRM          Two mile optically remote switching module
 TRM          Two-mile remote switching module
 TRMG         Terminal group
 TRMSN        Transmission
-TRMTR        Tramsmitter
 TRMTR        Transmitter
 TRNS         Translations
 TRR          Tip-ring reversal
@@ -5367,7 +5333,7 @@ TTR          Operator trunk trouble reports (MDII)
 TTS          Trunk time switch
 TTSI         Transmit time slot interchanger
 TTTN         Tandem tie trunk network
-TTU          Trasnslation Table Update (GTE)
+TTU          Translation Table Update (GTE)
 TTY          Get tty name  - COSMOS command
 TTY          Teletypewriter
 TTYC         Tty controller
@@ -5575,8 +5541,7 @@ WE           Wideband digital 50 kb/s-service code for LATA access
 WEBS         Wells electronic banking system
 WF           Wideband digital 230.4 kb/s-service code for LATA access
 WFA          Work and force administration
-WFA-CMSA     Work and force administration - common module for
-              systems administration
+WFA-CMSA     Work and force administration - common module for systems administration
 WFA/DO       Work and force administration/dispatch out
 WFL          Working frame location
 WG           Switch group
@@ -5630,17 +5595,17 @@ XTC          Extened test controller
 Y            Initials of person to whom ticket is dispatched
 Z            Redispatch information.
 Z            Transmit level point z
-ZA           Alarm circuts INTER/TRA blocal 1-26
-ZC           Call and talk circuts INTER/TRA blocal 1-26
+ZA           Alarm circuits INTER/TRA blocal 1-26
+ZC           Call and talk circuits INTER/TRA blocal 1-26
 ZCS          Zero code suppression
 ZCS          Zero code suppression encoding (ds-1)
-ZE           Emergency patching circuts INTER/TRA blocal 1-26
-ZF           Order circuts- facility INTER/TRA blocal 1-26
-ZM           Measurement and recording circuts INTER/TRA blocal 1-26
+ZE           Emergency patching circuits INTER/TRA blocal 1-26
+ZF           Order circuits - facility INTER/TRA blocal 1-26
+ZM           Measurement and recording circuits INTER/TRA blocal 1-26
 ZN           Zone location
-ZP           Test circut- plant service center INTER/TRA blocal 1-26
-ZQ           Quality and management circuts INTER/TRA blocal 1-26
-ZS           Switching- control and transfer circuts INTER/TRA blocal 1-26
-ZT           Test circuts- central office INTER/TRA blocal 1-26
-ZV           Order circuts- service INTER/TRA blocal 1-26
+ZP           Test circuit - plant service center INTER/TRA blocal 1-26
+ZQ           Quality and management circuits INTER/TRA blocal 1-26
+ZS           Switching- control and transfer circuits INTER/TRA blocal 1-26
+ZT           Test circuits- central office INTER/TRA blocal 1-26
+ZV           Order circuits- service INTER/TRA blocal 1-26
 kHz          Kilohertz-one thousand hertz
